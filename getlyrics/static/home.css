@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.navbar-brand {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+}
+
+#lyricform {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    padding: 3%;
+    box-shadow: palevioletred 0px 2px 5px -1px, palevioletred 0px 1px 3px -1px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.input-group {
+    margin-bottom: 3%;
+
+}
+
+.input-group input {
+    border: none;
+    border-bottom: 2px solid palevioletred;
+    outline: none;
+    padding: 1%;
+    width: 90%;
+}
+
+.input-group input:focus {
+    border-bottom: 4px solid palevioletred;
+    outline: none;
+}
+
+.btn {
+    border: 1px solid palevioletred;
+    padding: 1%;
+    width: 50%;
+    font-size: medium;
+    color: palevioletred;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+#lyrics h2 {
+    font-weight: 600;
+    color: palevioletred;
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+#lyrics {
+    text-align: center !important;
+    padding: 3%;
+    font-family: 'Mulish', sans-serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: palevioletred 0px 2px 5px -1px, palevioletred 0px 1px 3px -1px;
+    margin-top: 6%;
+
+}
+
+.alert {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    color: palevioletred;
+    text-align: justify;
+
+}
+
+@media only screen and (min-width:150px) and (max-width:768px) {
+    #lyricform {
+        width: 90%;
+        padding: 10%;
+        margin-top: 25%;
+        ;
+    }
+
+    .alert {
+        width: 98%;
+        margin-top: 6%;
+    }
+
+    .input-group {
+        margin-bottom: 10%;
+    }
+
+    .input-group input {
+        width: 97%;
+    }
+
+    .btn {
+        width: 90%;
+        padding: 2.5%;
+    }
+
+    #lyrics {
+        width: 97%;
+        margin-top: 10%;
+
+    }
+
+    #lyrics h2 {
+        margin-bottom: 6%;
+    }
+}

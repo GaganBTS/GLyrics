@@ -1,0 +1,15 @@
+{
+    "background_color": "purple",
+    "description": "Find lyrics of your favorite songs.",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "https://i.postimg.cc/VvZsPVkV/gll.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "name": "GLyrics",
+    "short_name": "GLyrics",
+    "start_url": "http://localhost:8000/"
+}

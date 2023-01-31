@@ -1,0 +1,21 @@
+{%extends 'base.html' %}
+{% load static%}
+{%block title%}{{ song }} Lyrics{%endblock%}
+{%block style %}
+<link rel='stylesheet' href="{% static 'home.css' %}">
+{%endblock%}
+
+{%block content%}
+<section id='lyrics'>
+    <h2>{{song|title}} by {{artist|title}}</h2>
+    {% if lyrics|length == 0%}
+    <p>Couldn't find the lyrics, Try again!</p>
+    {%else%}
+{%for l in lyrics%}
+
+<p>{{ l }}</p>
+{%endfor%}
+{%endif%}
+<a href='/' class='btn'>HOMEPAGE</a>
+</section>
+{%endblock%}

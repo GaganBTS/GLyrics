@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{%load static %}
+{%block title%}Glyrics{%endblock%}
+{%block style%}
+<link rel='stylesheet' href="{% static 'home.css' %}">
+{%endblock%}
+
+{%block content%}
+<section id='lyricform'>
+   
+    <form method='post' action="{% url 'home' %}">
+        {% csrf_token %}
+      <div class='input-group'>
+        <input name='artist' id='artist' type='text' placeholder='Enter the Artist Name' required>
+      </div>
+      <div class='input-group'>
+        <input name='song' id='song' type='text' placeholder='Enter the Song Name' required>
+      </div>
+ <button type='submit' class='btn'>Get Lyrics</button>
+    </form>
+    
+</section>
+<div class="alert" role="alert">
+  <span class=''><i class="fa-solid fa-circle-exclamation"></i>  We Scrape the Internet to find lyrics, it might take some seconds. Don't panic.</span>
+</div>
+
+
+
+
+
+
+
+{%endblock%}
